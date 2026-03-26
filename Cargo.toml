@@ -7,7 +7,7 @@ members = [
     "problems/intro/conway",
     "problems/intro/min-queue",
     "problems/std-collections/prefix",
-
-
+    "problems/std-collections/lru-cache",
+    "problems/std-collections/comm",
 
 ]
