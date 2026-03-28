@@ -10,5 +10,6 @@ members = [
     "problems/std-collections/lru-cache",
     "problems/std-collections/comm",
     "problems/traits/trust",
+    "problems/traits/mpsc",
 
 ]
