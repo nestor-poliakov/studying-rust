@@ -1,6 +1,6 @@
 use lru_cache::LRUCache;
 use ntest::timeout;
-use rand::{Rng, RngExt};
+use rand::RngExt;
 
 struct NaiveLRUCache<K, V> {
     capacity: usize,
