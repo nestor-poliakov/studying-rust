@@ -1,7 +1,8 @@
 use flatmap::FlatMap;
 
-use criterion::{black_box, criterion_group, criterion_main, Criterion};
+use criterion::{criterion_group, criterion_main, Criterion};
 use rand::{rngs::StdRng, seq::SliceRandom, RngExt, SeedableRng};
+use std::hint::black_box;
 
 use std::{
     collections::{hash_map::RandomState, BTreeMap, HashMap},
