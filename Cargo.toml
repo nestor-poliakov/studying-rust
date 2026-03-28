@@ -11,5 +11,6 @@ members = [
     "problems/std-collections/comm",
     "problems/traits/trust",
     "problems/traits/mpsc",
+    "problems/traits/flatmap",
 
 ]
