@@ -12,5 +12,6 @@ members = [
     "problems/traits/trust",
     "problems/traits/mpsc",
     "problems/traits/flatmap",
+    "problems/traits/itertools",
 
 ]

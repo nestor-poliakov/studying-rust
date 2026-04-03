@@ -185,7 +185,7 @@ dependencies = [
  "ciborium",
  "clap",
  "criterion-plot",
- "itertools",
+ "itertools 0.13.0",
  "num-traits",
  "oorandom",
  "page_size",
@@ -205,7 +205,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d8d80a2f4f5b554395e47b5d8305bc3d27813bacb73493eb1001e8f76dae29ea"
 dependencies = [
  "cast",
- "itertools",
+ "itertools 0.13.0",
 ]
 
 [[package]]
@@ -357,6 +357,10 @@ dependencies = [
  "serde",
  "serde_core",
 ]
+
+[[package]]
+name = "itertools"
+version = "0.2.0"
 
 [[package]]
 name = "itertools"
