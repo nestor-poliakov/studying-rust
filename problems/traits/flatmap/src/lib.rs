@@ -57,10 +57,7 @@ impl<K: Ord + Debug, V: Debug> FlatMap<K, V> {
         K: Borrow<Q>,
     {
         let kv = self.remove_entry(key);
-        match kv {
-            None => None,
-            Some((_, v)) => Some(v),
-        }
+        kv.map(|(_, v)| v)
     }
 
     pub fn remove_entry<Q: Ord + ?Sized>(&mut self, key: &Q) -> Option<(K, V)>

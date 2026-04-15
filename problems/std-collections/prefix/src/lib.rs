@@ -36,7 +36,7 @@ pub fn longest_common_prefix_allocs(strs: Vec<&str>) -> String {
         return String::new();
     }
     if strs.len() == 1 {
-        let x = *strs.get(0).unwrap();
+        let x = *strs.first().unwrap();
         return String::from(x);
     }
     let mut chars = Vec::new();
@@ -61,5 +61,5 @@ pub fn longest_common_prefix_allocs(strs: Vec<&str>) -> String {
         }
         len += 1;
     }
-    strs.get(0).unwrap().chars().take(len).collect()
+    strs.first().unwrap().chars().take(len).collect()
 }

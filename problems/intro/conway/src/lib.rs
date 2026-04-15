@@ -2,8 +2,6 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 
-use std::usize;
-
 #[derive(Clone, PartialEq, Eq)]
 pub struct Grid<T> {
     rows: usize,
@@ -46,7 +44,7 @@ impl<T: Clone + Default> Grid<T> {
 
     pub fn neighbours(&self, row: usize, col: usize) -> impl Iterator<Item = (usize, usize)> {
         // return
-        return match (row, col) {
+        match (row, col) {
             // rows == 1 && cols == 1
             (0, 0) if self.rows == 1 && self.cols == 1 => Neighbours::new(),
             // rows == 1
@@ -160,7 +158,7 @@ impl<T: Clone + Default> Grid<T> {
                 n.set((row + 1, col + 1));
                 n
             }
-        };
+        }
     }
 }
 
