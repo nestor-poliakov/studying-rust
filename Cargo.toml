@@ -13,6 +13,7 @@ members = [
     "problems/traits/mpsc",
     "problems/traits/flatmap",
     "problems/traits/itertools",
-    "problems/borrowing/pstack"
+    "problems/borrowing/pstack",
+    "problems/borrowing/context"
 
 ]
